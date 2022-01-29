@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  rust-tutorial:
+    image: rust:rust-tutorial
+    container_name: rust-tutorial
+    build: ./rust
+    volumes:
+      - ./..:/workspace:cached
+    tty: true
